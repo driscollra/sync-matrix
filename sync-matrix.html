@@ -1,0 +1,50 @@
+# Staff Sync Matrix
+
+A standalone scheduling tool for tracking staff across categories like Leave, Comms, Repatriation, etc.
+
+## How to run
+
+Just double-click `sync-matrix.html` — it opens in any modern web browser (Chrome, Edge, Firefox, Safari). No install, no server, no internet needed.
+
+## How to use
+
+### Adding structure
+- **Add a category**: Type a name in the bottom field (e.g. "Leave", "Patrol", "Training") and click **+ Category**.
+- **Add an employee**: Inside each category, use the "Add employee to..." field.
+- **Rename / recolor / delete**: Hover any category header to reveal action buttons.
+- **Collapse / expand**: Click the category header.
+
+### Scheduling shifts
+- **Create a shift**: Double-click any empty cell in an employee's row.
+- **Move a shift**: Drag the body of a tile.
+- **Resize a shift**: Drag either edge of the tile.
+- **Edit details**: Double-click a tile to change the start time, end time, note, or delete it.
+- **Fine-grained snapping**: Hold **Shift** while dragging.
+
+### Views
+- **Zoom**: Switch between hourly (1 day), daily (14 days), and weekly (8 weeks) using the dropdown.
+- **Navigate**: Use the arrows, or click **Today** to jump back to now.
+- The blue vertical line shows the current time.
+
+### Color modes
+- **By category** (default): All shifts in a category share the category's color.
+- **By employee**: Each employee gets their own color, useful for spotting one person across multiple categories.
+
+### Search
+Type in the search box to filter by employee name, category name, or shift note.
+
+## Sharing schedules with others
+
+Each person's browser stores their own data locally. To share a schedule:
+
+1. **Export**: Click **Export JSON** to download a `schedule.json` file.
+2. **Send**: Email, message, or share the file with teammates.
+3. **Import**: The recipient opens their own copy of `sync-matrix.html`, clicks **Import**, and picks the JSON file.
+
+You can also **Export CSV** for a flat list of shifts that opens in Excel or Google Sheets.
+
+## Notes
+
+- Data is saved automatically to the browser's local storage. Clearing browser data will erase it — export regularly as backup.
+- Each browser keeps its own copy. There is no shared live sync between users; coordinate via JSON exports.
+- The sample data (Sarah Chen, Marcus Webb, etc.) is just a demo. Click **Reset** to wipe it and start fresh.
